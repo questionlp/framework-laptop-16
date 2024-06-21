@@ -17,7 +17,17 @@ Located under `qmk-via` is the exported JSON file that includes the mappings to 
 
 ## Disable Wireless Power Saving
 
-There may be issues with the AMD/MediaTek wireless card dropping connections or high latency when wireless power saving is enabled. To disable power saving, add the `99-wifi-powersave-off.conf` file under `etc/NetworkManager/conf.d`.
+Wireless network power saving can be disabled on a per-connection basis using the `nmcli` utility:
+
+```bash
+nmcli connection modify <ssid> wifi.powersave 2
+```
+
+To revert to the default value, run:
+
+```bash
+nmcli connection modify <ssid> wifi.powersave 0
+```
 
 ## 'License'
 
