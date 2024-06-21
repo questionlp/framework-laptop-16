@@ -15,6 +15,10 @@ sudo udevadm trigger
 
 Located under `qmk-via` is the exported JSON file that includes the mappings to swap the two keys both for layers 0 and 2.
 
+## Disable Wireless Power Saving
+
+There may be issues with the AMD/MediaTek wireless card dropping connections or high latency when wireless power saving is enabled. To disable power saving, add the `99-wifi-powersave-off.conf` file under `etc/NetworkManager/conf.d`.
+
 ## 'License'
 
 Files and documentation included in this repository is free and unemcumbered software released into the public domain. For more information, see the included UNLICENSE file.
