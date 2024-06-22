@@ -29,6 +29,10 @@ To revert to the default value, run:
 nmcli connection modify <ssid> wifi.powersave 0
 ```
 
+## Improving Laptop Sound
+
+In many cases, the sound that comes out of the speakers sounds a bit muddy and does not have good sound staging. To improve things a bit, I use [EasyEffects](https://github.com/wwmm/easyeffects) and the "Laptop" preset provided by [JackHack96/EasyEffects-Presets](https://www.youtube.com/watch?v=liQjYpy7KeE).
+
 ## 'License'
 
 Files and documentation included in this repository is free and unemcumbered software released into the public domain. For more information, see the included UNLICENSE file.
