@@ -2,6 +2,10 @@
 
 This repository contains files that fix issues or modify behavior of the Framework Laptop 16 when using Linux.
 
+## Using OpenH264 and Mesa from RPM Fusion
+
+See [Installing OpenH264 and Mesa from RPM Fusion](./installing-openh264-and-mesa-from-rpmfusion.md)
+
 ## QMK/VIA Keyboard: Left CTRL and Fn Swap
 
 In order to swap the left `CTRL` and `Fn` keys using Framework's version of [VIA](https://keyboard.frame.work/), a `udev` rule needs to be added in order for the application to access and modify the QMK firmware.
