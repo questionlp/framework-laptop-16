@@ -49,3 +49,13 @@ sudo dnf install libdvdcss
 sudo dnf install rpmfusion-nonfree-release-tainted
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware"
 ```
+
+## Enable VA-API and OpenH264 in Firefox
+
+Open Firefox, browse to `about:config` and set the following parameters to `true` (add them if they are not already present):
+
+* media.gmp-gmpopenh264.autoupdate
+* media.gmp-gmpopenh264.enabled
+* media.gmp-gmpopenh264.provider.enabled
+* media.peerconnection.video.h264_enabled
+* media.ffmpeg.vaapi.enabled
