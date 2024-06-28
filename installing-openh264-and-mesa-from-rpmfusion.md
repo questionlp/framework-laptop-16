@@ -31,7 +31,7 @@ sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
 ## Installing Multimedia Programs, Tools and Dependencies from RPM Fusion
 
 ```bash
-sudo dnf install libva-utils mpv
+sudo dnf install libva-utils mpv nvtop
 sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 sudo dnf update @sound-and-video
 ```
