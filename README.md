@@ -6,9 +6,9 @@ This repository contains files that fix issues or modify behavior of the Framewo
 
 See [Installing OpenH264 and Mesa from RPM Fusion](./installing-openh264-and-mesa-from-rpmfusion.md)
 
-## QMK/VIA Keyboard: Left CTRL and Fn Swap
+## QMK/VIA Keyboard: Left CTRL and Fn Swap and Right CTRL and ALT Swap
 
-In order to swap the left `CTRL` and `Fn` keys using Framework's version of [VIA](https://keyboard.frame.work/), a `udev` rule needs to be added in order for the application to access and modify the QMK firmware.
+In order to swap the left `CTRL` and `Fn` keys (and, optionally, swapping the right `CTRL` and `ALT` keys) using Framework's version of [VIA](https://keyboard.frame.work/), a `udev` rule needs to be added in order for the application to access and modify the QMK firmware.
 
 Copy the `50-qmk.rules` file under `etc/udev/rules.d` to `/etc/udev/rules.d` and run the following commands:
 
@@ -17,7 +17,7 @@ sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
 
-Located under `qmk-via` is the exported JSON file that includes the mappings to swap the two keys both for layers 0 and 2.
+Located under `qmk-via` are two exported JSON file, one for just the left key swaps and one for both set of key swaps.
 
 ## Disable Wireless Power Saving
 
