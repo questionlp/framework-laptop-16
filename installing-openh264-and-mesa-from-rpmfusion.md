@@ -19,6 +19,7 @@ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-releas
 
 ```bash
 sudo dnf swap ffmpeg-free ffmpeg --allowerasing
+sudo dnf install libavcodec-freeworld ffmpeg --allowerasing
 ```
 
 ## Installing Mesa Drivers for AMD Radeon
@@ -31,7 +32,7 @@ sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
 ## Installing Multimedia Programs, Tools and Dependencies from RPM Fusion
 
 ```bash
-sudo dnf install libva-utils mpv nvtop
+sudo dnf install libva-utils mpv nvtop libavcodec-freeworld
 sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 sudo dnf update @sound-and-video
 ```

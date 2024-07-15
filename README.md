@@ -6,6 +6,16 @@ This repository contains files that fix issues or modify behavior of the Framewo
 
 See [Installing OpenH264 and Mesa from RPM Fusion](./installing-openh264-and-mesa-from-rpmfusion.md)
 
+## Fix Headset Microphone Input
+
+There is a known issue with the default Fedora install may not correctly handling headset microphone input from the audio expansion card.
+
+```bash
+sudo tee /etc/modprobe.d/alsa-base.conf <<< "echo options snd-hda-intel index=1,0 model=auto,dell-headset-multi"
+```
+
+Source: <https://community.frame.work/t/solved-headset-mic-on-amd-fw13-running-fedora-39/38847/2>
+
 ## QMK/VIA Keyboard: Left CTRL and Fn Swap and Right CTRL and ALT Swap
 
 In order to swap the left `CTRL` and `Fn` keys (and, optionally, swapping the right `CTRL` and `ALT` keys) using Framework's version of [VIA](https://keyboard.frame.work/), a `udev` rule needs to be added in order for the application to access and modify the QMK firmware.
