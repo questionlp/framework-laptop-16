@@ -27,7 +27,13 @@ sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
 
-Located under `qmk-via` are two exported JSON file, one for just the left key swaps and one for both set of key swaps.
+I also mapped `Fn` + `Tab` to `Scroll Lock` in order to use `Scroll Lock` as a `Compose` key in KDE.
+
+Located under `qmk-via` are exported JSON files containing the various swaps and mappings:
+
+| [fl16-ansi-swaps-lctrl_fn-ralt_rctl-scrolllock-map.json](qmk-via/fl16-ansi-swaps-lctrl_fn-ralt_rctl-scrolllock-map.json) | Swapped: Left Ctrl and Fn, Swapped: Right Alt and Right Ctrl, Mapped: Fn+Tab to Scroll Lock |
+| [fl16-ansi-swaps-lctrl_fn-ralt_rctl.json](qmk-via/fl16-ansi-swaps-lctrl_fn-ralt_rctl.json) | Swapped: Left Ctrl and Fn, Swapped: Right Alt and Right Ctrl |
+| [fl16-ansi-swaps-lctrl_fn.json](qmk-via/fl16-ansi-swaps-lctrl_fn.json) | Swapped: Left Ctrl and Fn |
 
 ## Disable Wireless Power Saving
 
