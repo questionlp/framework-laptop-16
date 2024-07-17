@@ -27,15 +27,16 @@ sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
 
-I also mapped `Fn` + `Tab` to `Scroll Lock` in order to use `Scroll Lock` as a `Compose` key in KDE.
+I also mapped `Fn` + `Caps Lock` to `Scroll Lock` in order to use `Scroll Lock` as a `Compose` key in KDE. There is a variation of the map to use `Fn` + `Tab` instead of `Fn` + `Caps Lock`.
 
 Located under `qmk-via` are exported JSON files containing the various swaps and mappings:
 
 | Keymap JSON File | Description |
 | --- | --- |
-| [fl16-ansi-swaps-lctrl_fn-ralt_rctl-scrolllock-map.json](qmk-via/fl16-ansi-swaps-lctrl_fn-ralt_rctl-scrolllock-map.json) | Swapped: Left Ctrl and Fn, Swapped: Right Alt and Right Ctrl, Mapped: Fn+Tab to Scroll Lock |
-| [fl16-ansi-swaps-lctrl_fn-ralt_rctl.json](qmk-via/fl16-ansi-swaps-lctrl_fn-ralt_rctl.json) | Swapped: Left Ctrl and Fn, Swapped: Right Alt and Right Ctrl |
-| [fl16-ansi-swaps-lctrl_fn.json](qmk-via/fl16-ansi-swaps-lctrl_fn.json) | Swapped: Left Ctrl and Fn |
+| [fl16-ansi-swaps-lctrl_fn-ralt_rctl-fnmap-capslock_scrolllock.json](qmk-via/fl16-ansi-swaps-lctrl_fn-ralt_rctl-fnmap-capslock_scrolllock.json) | Swapped: Left `Ctrl` and `Fn`, Swapped: Right `Alt` and Right `Ctrl`, Mapped: `Fn` + `Caps Lock` to Scroll Lock |
+| [fl16-ansi-swaps-lctrl_fn-ralt_rctl-fnmap-tab_scrolllock.json](qmk-via/fl16-ansi-swaps-lctrl_fn-ralt_rctl-fnmap-tab_scrolllock.json) | Swapped: Left `Ctrl` and `Fn`, Swapped: Right `Alt` and Right `Ctrl`, Mapped: `Fn` + `Tab` to Scroll Lock |
+| [fl16-ansi-swaps-lctrl_fn-ralt_rctl.json](qmk-via/fl16-ansi-swaps-lctrl_fn-ralt_rctl.json) | Swapped: Left `Ctrl` and `Fn`, Swapped: Right `Alt` and Right `Ctrl` |
+| [fl16-ansi-swaps-lctrl_fn.json](qmk-via/fl16-ansi-swaps-lctrl_fn.json) | Swapped: Left `Ctrl` and `Fn` |
 
 ## Disable Wireless Power Saving
 
