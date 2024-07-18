@@ -27,7 +27,7 @@ sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
 
-I also mapped `Fn` + `Caps Lock` to `Scroll Lock` in order to use `Scroll Lock` as a `Compose` key in KDE. There is a variation of the map to use `Fn` + `Tab` instead of `Fn` + `Caps Lock`.
+I also mapped `Fn` + `Caps Lock` to `Scroll Lock` in order to use `Scroll Lock` as a `Compose` key. There is a variation of the map to use `Fn` + `Tab` instead of `Fn` + `Caps Lock`.
 
 Located under `qmk-via` are exported JSON files containing the various swaps and mappings:
 
@@ -37,6 +37,51 @@ Located under `qmk-via` are exported JSON files containing the various swaps and
 | [fl16-ansi-swaps-lctrl_fn-ralt_rctl-fnmap-tab_scrolllock.json](qmk-via/fl16-ansi-swaps-lctrl_fn-ralt_rctl-fnmap-tab_scrolllock.json) | Swapped: Left `Ctrl` and `Fn`, Swapped: Right `Alt` and Right `Ctrl`, Mapped: `Fn` + `Tab` to Scroll Lock |
 | [fl16-ansi-swaps-lctrl_fn-ralt_rctl.json](qmk-via/fl16-ansi-swaps-lctrl_fn-ralt_rctl.json) | Swapped: Left `Ctrl` and `Fn`, Swapped: Right `Alt` and Right `Ctrl` |
 | [fl16-ansi-swaps-lctrl_fn.json](qmk-via/fl16-ansi-swaps-lctrl_fn.json) | Swapped: Left `Ctrl` and `Fn` |
+
+### Mapping `Scroll Lock` to `Compose`
+
+The steps provided have been tested in Fedora 40 (KDE Plasma 6) and Debian 12 (GNOME, Cinnamon, MATE and XFCE).
+
+#### KDE Plasma 6
+
+1. In the "System Settings" application, browse to "Keyboard" under "Input & Output"
+2. Click on the "Key Bindings" tab
+3. Scroll down to and expand the "Position of Compose Key" item
+4. Check "Scroll Lock"
+5. Click "Apply" to save the settings
+
+#### GNOME
+
+1. In the "Settings" application, browse to "Keyboard"
+2. Under "Special Character Entry", click on "Compose Key"
+3. Click on the toggle to enable the "Compose Key" option
+4. Select "Scroll Lock" from the list and close the dialog
+
+#### Cinnamon
+
+1. Click on the Cinnamon Menu button, browse to "Keyboard" under "Preferences"
+2. In the "Keyboard" settings window, click on the "Layouts" tab
+3. In the lower portion of the window, click on "Options..."
+4. In the "Keyboard Layout Options" dialog, scroll down to and expand the "Position of Compose Key" item
+5. Check "Scroll Lock"
+6. Click on the "Close" button to close the dialog
+
+#### MATE
+
+1. Click on the "System" menu and browse to "Keyboard" under "Preferences" and "Hardware"
+2. In the "Keyboard Preferences" window, click on the "Layout" tab
+3. In the lower portion of the window, click on the "Options..."
+4. In the "Keyboard Layout Options" dialog, scroll down to and expand the "Position of Compose Key" item
+5. Check "Scroll Lock"
+6. Click on the "Close" button to close the dialog
+
+#### XFCE
+
+1. Click on the "Applications" menu and browse to "Keyboard" under "Settings"
+2. In the "Keyboard" settings window, click on the "Layout" tab
+3. Click on the toggle to disable the "Use system defaults" option
+4. In the "Compose key" dropdown, select "Scroll Lock"
+5. Click on the "Close" button to close the settings window
 
 ## Disable Wireless Power Saving
 
