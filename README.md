@@ -1,35 +1,16 @@
 # Framework Laptop 16
 
-This repository contains information that I have found useful or steps that I needed to take to get Fedora working the way I want on a Framework Laptop 16.
+This repository contains files that fix issues or modify behavior of the Framework Laptop 16 when using Linux.
 
-## Installing and Setting Up Packages
+## Fedora: Package Installation
 
-### Installing First Set of Packages
+*This only applies to non-immutable versions and spins of Fedora.*
 
-These packages include some basic utilities and fonts that I use regularly.
+### Prepping Fedora for Web Development
 
-```bash
-sudo dnf install htop screen vim neofetch mozilla-fira-mono-fonts mozilla-fira-sans-fonts fira-code-fonts jetbrains-mono-fonts-all cascadia-fonts-all cascadia-code-fonts cascadia-code-pl-fonts ibm-plex-fonts-all git gh zsh avahi-tools
-```
+See [Prepping Fedora for Python, Ruby and Node.js Web Development](./prepping-fedora-for-web-development.md)
 
-### KDE Spin of Fedora: Removing MariaDB
-
-Since I prefer to install MySQL Community Server from the Oracle MySQL Yum repository, I first need to remove MariaDB, which is installed as a dependency for several KDE applications. Removing MariaDB will break Akonadi, Kontact and KOrganizer. That said, I don't plan on using those applications.
-
-```bash
-sudo dnf remove mariadb
-```
-
-### Installing Development Dependencies
-
-In order to build Python, Ruby and Node.js from source via pyenv, rbenv and nvm, a number of dependencies must be installed.
-
-```bash
-sudo dnf groupinstall "Development Tools"
-sudo dnf install zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel xz xz-devel libffi-devel findutils tk-devel libyaml-devel gcc-g++
-```
-
-## Using OpenH264 and Mesa from RPM Fusion
+### Using OpenH264 and Mesa from RPM Fusion
 
 See [Installing OpenH264 and Mesa from RPM Fusion](./installing-openh264-and-mesa-from-rpmfusion.md)
 
@@ -111,6 +92,8 @@ The steps provided have been tested in Fedora 40 (KDE Plasma 6) and Debian 12 (G
 5. Click on the "Close" button to close the settings window
 
 ## Disable Wireless Power Saving
+
+*This may not be necessary for all cases, but including it for reference.*
 
 Wireless network power saving can be disabled on a per-connection basis using the `nmcli` utility:
 
