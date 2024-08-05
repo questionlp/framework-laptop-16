@@ -14,6 +14,12 @@ See [Prepping Fedora for Python, Ruby and Node.js Web Development](./prepping-fe
 
 See [Installing OpenH264 and Mesa from RPM Fusion](./installing-openh264-and-mesa-from-rpmfusion.md)
 
+## power-profiles-daemon, Power Save and Reduced Screen Contrast
+
+When setting the Power Profile of the Framework Laptop 16 to "Power Save" mode and running on battery, power-profiles-daemon and the AMD GPU driver will put the display panel in low power mode, thus causing the display have lower contrast.
+
+I have created an [open issue](https://github.com/questionlp/framework-laptop-16/issues/1) in this repository to provide a temporary workaround until a more permanent solution has been implemented.
+
 ## Fix Headset Microphone Input
 
 There is a known issue with the default Fedora install may not correctly handling headset microphone input from the audio expansion card.
