@@ -18,7 +18,7 @@ See [Installing OpenH264 and Mesa from RPM Fusion](./installing-openh264-and-mes
 
 When setting the Power Profile of the Framework Laptop 16 to "Power Save" mode and running on battery, power-profiles-daemon and the AMD GPU driver will put the display panel in low power mode, thus causing the display have lower contrast.
 
-I have created an [open issue](https://github.com/questionlp/framework-laptop-16/issues/1) in this repository to provide a temporary workaround until a more permanent solution has been implemented.
+A solution has been found in the README.md file for [power-profiles-daemon](https://gitlab.freedesktop.org/upower/power-profiles-daemon) git repo. I have posted more information in [issue #1](https://github.com/questionlp/framework-laptop-16/issues/1).
 
 ## Fix Headset Microphone Input
 
