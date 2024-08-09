@@ -104,18 +104,24 @@ The steps provided have been tested in Fedora 40 (KDE Plasma 6) and Debian 12 (G
 Wireless network power saving can be disabled on a per-connection basis using the `nmcli` utility:
 
 ```bash
-nmcli connection modify <ssid> wifi.powersave 2
+nmcli connection modify ssid wifi.powersave 2
 ```
 
 To revert to the default value, run:
 
 ```bash
-nmcli connection modify <ssid> wifi.powersave 0
+nmcli connection modify ssid wifi.powersave 0
 ```
 
 ## Improving Laptop Sound
 
 In many cases, the sound that comes out of the speakers sounds a bit muddy and does not have good sound staging. To improve things a bit, I use [EasyEffects](https://github.com/wwmm/easyeffects) and the "Laptop" preset provided by [JackHack96/EasyEffects-Presets](https://github.com/JackHack96/EasyEffects-Presets).
+
+## VS Code: Inserting of indents when using KDE Task Switcher
+
+While this is not specific to the Framework Laptop 16 or even Fedora, but it is an annoyance when using KDE Task Switcher via `Alt` + `Tab`. A workaround is to set "Allow legacy X11 apps to read keystrokes typed in all apps" to "Never" instead of the default "As above, plus any key typed while the Control, Alt, or Meta keys are pressed".
+
+Keep in mind that this might break functionality of other legacy X11 applications outside of VS Code.
 
 ## 'License'
 
