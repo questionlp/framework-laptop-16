@@ -5,7 +5,7 @@
 These packages include some basic utilities and fonts that I use regularly.
 
 ```bash
-sudo dnf install htop screen vim neofetch mozilla-fira-mono-fonts mozilla-fira-sans-fonts fira-code-fonts jetbrains-mono-fonts-all cascadia-fonts-all cascadia-code-fonts cascadia-code-pl-fonts ibm-plex-fonts-all git gh zsh avahi-tools
+sudo dnf install htop screen vim fastfetch mozilla-fira-mono-fonts mozilla-fira-sans-fonts fira-code-fonts jetbrains-mono-fonts-all cascadia-fonts-all cascadia-code-fonts cascadia-code-pl-fonts ibm-plex-fonts-all git gh zsh avahi-tools
 ```
 
 ## KDE Spin of Fedora: Removing MariaDB
