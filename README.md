@@ -20,7 +20,7 @@ When setting the Power Profile of the Framework Laptop 16 to "Power Save" mode a
 
 A solution has been found in the README.md file for [power-profiles-daemon](https://gitlab.freedesktop.org/upower/power-profiles-daemon) git repo. I have posted more information in [issue #1](https://github.com/questionlp/framework-laptop-16/issues/1).
 
-With Fedora 41 switching from using `power-profiles-daemon` to `tuned-ppd`, the moethod of automatically setting the display panel power mode needs to be updated. Steps are provided in [issue #2](https://github.com/questionlp/framework-laptop-16/issues/1). Corresponding files have been added to the repository under `etc/tuned`.
+With Fedora 41 switching from using `power-profiles-daemon` to `tuned-ppd`, the moethod of automatically setting the display panel power mode needs to be updated. Steps are provided in [issue #2](https://github.com/questionlp/framework-laptop-16/issues/2). Corresponding files have been added to the repository under `etc/tuned`.
 
 ## Fix Headset Microphone Input
 
