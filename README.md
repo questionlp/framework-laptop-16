@@ -106,13 +106,13 @@ The steps provided have been tested in Fedora 40 (KDE Plasma 6) and Debian 12 (G
 Wireless network power saving can be disabled on a per-connection basis using the `nmcli` utility:
 
 ```bash
-nmcli connection modify ssid wifi.powersave 2
+nmcli connection modify ssid 802-11-wireless.powersave 2
 ```
 
 To revert to the default value, run:
 
 ```bash
-nmcli connection modify ssid wifi.powersave 0
+nmcli connection modify ssid 802-11-wireless.powersave 0
 ```
 
 ## Improving Laptop Sound
