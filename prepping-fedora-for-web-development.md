@@ -5,7 +5,13 @@
 These packages include some basic utilities and fonts that I use regularly.
 
 ```bash
-sudo dnf install htop screen vim fastfetch mozilla-fira-mono-fonts mozilla-fira-sans-fonts fira-code-fonts jetbrains-mono-fonts-all cascadia-fonts-all cascadia-code-fonts cascadia-code-pl-fonts ibm-plex-fonts-all git gh zsh avahi-tools
+sudo dnf install htop screen vim fastfetch git gh zsh avahi-tools
+```
+
+### Optional: Install Development Fonts
+
+```bash
+sudo dnf install mozilla-fira-mono-fonts mozilla-fira-sans-fonts fira-code-fonts jetbrains-mono-fonts-all cascadia-fonts-all cascadia-code-fonts cascadia-code-pl-fonts ibm-plex-fonts-all
 ```
 
 ## KDE Spin of Fedora: Removing MariaDB
@@ -20,7 +26,16 @@ sudo dnf remove mariadb
 
 In order to build Python, Ruby and Node.js from source via pyenv, rbenv and nvm, a number of dependencies must be installed.
 
+### Fedora 40
+
 ```bash
 sudo dnf groupinstall "Development Tools"
+sudo dnf install zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel xz xz-devel libffi-devel findutils tk-devel libyaml-devel gcc-g++
+```
+
+### Fedora 41
+
+```bash
+sudo dnf group install development-tools
 sudo dnf install zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel xz xz-devel libffi-devel findutils tk-devel libyaml-devel gcc-g++
 ```
