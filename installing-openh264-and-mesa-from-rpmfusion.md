@@ -43,7 +43,7 @@ sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
 ### Fedora 40
 
 ```bash
-sudo dnf install libva-utils mpv nvtop libavcodec-freeworld
+sudo dnf install libva-utils mpv nvtop libavcodec-freeworld vainfo
 sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 sudo dnf update @sound-and-video
 ```
@@ -51,7 +51,7 @@ sudo dnf update @sound-and-video
 ### Fedora 41
 
 ```bash
-sudo dnf install libva-utils mpv nvtop libavcodec-freeworld
+sudo dnf install libva-utils mpv nvtop libavcodec-freeworld vainfo
 sudo dnf group upgrade multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 sudo dnf group upgrade sound-and-video
 ```
