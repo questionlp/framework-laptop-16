@@ -22,6 +22,24 @@ A solution has been found in the README.md file for [power-profiles-daemon](http
 
 With Fedora 41 switching from using `power-profiles-daemon` to `tuned-ppd`, the moethod of automatically setting the display panel power mode needs to be updated. Steps are provided in [issue #2](https://github.com/questionlp/framework-laptop-16/issues/2). Corresponding files have been added to the repository under `etc/tuned`.
 
+## Fedora 41: Replacing `tuned` with `power-profiles-daemon`
+
+To replace the default `tuned` with the Framework recommended `power-profiles-daemon`, you can run the following on a fully updated system:
+
+```bash
+sudo dnf remove tuned
+sudo dnf install power-profiles-daemon
+```
+
+Once `power-profiles-daemon` has been installed, you will want to restart your laptop as soon as possible for the changes to fully take effect.
+
+SELinux may report a violation when switching power profiles. To disable the warning, you can run the following as **root**:
+
+```bash
+ausearch -c 'power-profiles-' --raw | audit2allow -M my-powerprofiles
+semodule -X 300 -i my-powerprofiles.pp
+```
+
 ## Fix Headset Microphone Input
 
 There is a known issue with the default Fedora install may not correctly handling headset microphone input from the audio expansion card.
