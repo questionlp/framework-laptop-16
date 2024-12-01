@@ -42,6 +42,10 @@ semodule -X 300 -i my-powerprofiles.pp
 
 You may need to [re-apply the reduced screen contrast fix](https://github.com/questionlp/framework-laptop-16/issues/1) for `power-profiles-daemon` mentioned above if you made the changes in Fedora 40, upgraded to Fedora 41, then replace `tuned` with `power-profiles-daemon`.
 
+## Fedora 41: AMD GPU Screen Glitches and Corruption
+
+See [issue #3](https://github.com/questionlp/framework-laptop-16/issues/3) for steps to add `amdgpu.sg_display=0` to the kernel arguments using `grubby` as a potential fix for random screen glitches and corruption that can occur with AMD GPUs.
+
 ## Fix Headset Microphone Input
 
 There is a known issue with the default Fedora install may not correctly handling headset microphone input from the audio expansion card.
