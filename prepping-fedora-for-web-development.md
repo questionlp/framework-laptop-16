@@ -30,12 +30,12 @@ In order to build Python, Ruby and Node.js from source via pyenv, rbenv and nvm,
 
 ```bash
 sudo dnf groupinstall "Development Tools"
-sudo dnf install zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel xz xz-devel libffi-devel findutils tk-devel libyaml-devel gcc-g++
+sudo dnf install zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel xz xz-devel libffi-devel findutils tk-devel libyaml-devel gcc-g++ cmake scdoc
 ```
 
 ### Fedora 41
 
 ```bash
 sudo dnf group install development-tools
-sudo dnf install zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel xz xz-devel libffi-devel findutils tk-devel libyaml-devel gcc-g++
+sudo dnf install zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel xz xz-devel libffi-devel findutils tk-devel libyaml-devel gcc-g++ cmake scdoc
 ```
