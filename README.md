@@ -14,6 +14,30 @@ See [Prepping Fedora for Python, Ruby and Node.js Web Development](./prepping-fe
 
 See [Installing OpenH264 and Mesa from RPM Fusion](./installing-openh264-and-mesa-from-rpmfusion.md)
 
+## Disabling Fedora Flatpak Remotes
+
+Due to issues with Flatpak applications that are distributed via Fedora's Flatpak repo not being official versions, up to date, or have other issues, it is recommended to disable both `fedora` and `fedora-testing` remotes and stick with installing Flatpaks from [Flathub](https://flathub.org/) instead.
+
+To disable either of the Fedora remotes, run the following command for the specific remote to disable:
+
+```bash
+flatpak remote-modify --no-filter --disable fedora
+flatpak remote-modify --no-filter --disable fedora-testing
+```
+
+To re-enable either of the remotes, run the following command:
+
+```bash
+flatpak remote-modify --no-filter --enable fedora
+flatpak remote-modify --no-filter --enable fedora-testing
+```
+
+To ensure that the Flathub remote is available, run the following command (provided by [Flathub](https://flathub.org/setup/Fedora)):
+
+```bash
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+```
+
 ## power-profiles-daemon, Power Save and Reduced Screen Contrast
 
 When setting the Power Profile of the Framework Laptop 16 to "Power Save" mode and running on battery, power-profiles-daemon and the AMD GPU driver will put the display panel in low power mode, thus causing the display have lower contrast.
