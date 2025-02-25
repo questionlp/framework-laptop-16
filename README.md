@@ -101,6 +101,8 @@ Located under `qmk-via` are exported JSON files containing the various swaps and
 | [fl16-ansi-swaps-lctrl_fn-ralt_rctl-fnmap-tab_scrolllock.json](qmk-via/fl16-ansi-swaps-lctrl_fn-ralt_rctl-fnmap-tab_scrolllock.json) | Swapped: Left `Ctrl` and `Fn`, Swapped: Right `Alt` and Right `Ctrl`, Mapped: `Fn` + `Tab` to Scroll Lock |
 | [fl16-ansi-swaps-lctrl_fn-ralt_rctl.json](qmk-via/fl16-ansi-swaps-lctrl_fn-ralt_rctl.json) | Swapped: Left `Ctrl` and `Fn`, Swapped: Right `Alt` and Right `Ctrl` |
 | [fl16-ansi-swaps-lctrl_fn.json](qmk-via/fl16-ansi-swaps-lctrl_fn.json) | Swapped: Left `Ctrl` and `Fn` |
+| [fl16-rgb-ansi-fnmap-capslock_scrolllock.json](qmk-via/fl16-rgb-ansi-fnmap-capslock_scrolllock.json) | RGB US English keyboard - Mapped: `Fn` + `Caps Lock` to Scroll Lock |
+| [fl16-rgb-ansi-swaps-ralt_rctl-fnmap-capslock_scrolllock.json](qmk-via/fl16-rgb-ansi-swaps-ralt_rctl-fnmap-capslock_scrolllock.json) | RGB US English keyboard - Swapped: Right `Ctrl` and Right `Alt`, Mapped: `Fn` + `Caps Lock` to Scroll Lock |
 
 ### Mapping `Scroll Lock` to `Compose`
 
