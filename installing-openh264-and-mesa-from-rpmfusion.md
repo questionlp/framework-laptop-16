@@ -56,6 +56,14 @@ sudo dnf group upgrade multimedia --setopt="install_weak_deps=False" --exclude=P
 sudo dnf group upgrade sound-and-video
 ```
 
+### Fedora 42
+
+```bash
+sudo dnf install libva-utils mpv nvtop libavcodec-freeworld vainfo
+sudo dnf group upgrade multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+sudo dnf group install sound-and-video
+```
+
 ## Install Support for Playing DVDs
 
 ```bash
