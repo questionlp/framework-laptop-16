@@ -5,7 +5,7 @@
 These packages include some basic utilities and fonts that I use regularly.
 
 ```bash
-sudo dnf install htop screen vim fastfetch git gh zsh avahi-tools
+sudo dnf install htop tmux vim fastfetch git gh zsh avahi-tools
 ```
 
 ### Optional: Install Development Fonts
