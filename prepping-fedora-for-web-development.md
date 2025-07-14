@@ -22,6 +22,20 @@ Since I prefer to install MySQL Community Server from the Oracle MySQL Yum repos
 sudo dnf remove mariadb
 ```
 
+## Switching Akonadi to Use SQLite
+
+SQLite can be used as the backend for Akonadi instead of MariaDB by updating `$HOME/.config/akonadi/akonadiserverrc` to use the `QSQLITE3` driver instead of MySQL or MariaDB.
+
+```ini
+[%General]
+Driver=QSQLITE3
+
+[QSQLITE]
+Name=$HOME/.local/share/akonadi/akonadi.db
+```
+
+Replace `$HOME` with the full path for your home directory.
+
 ## Fedora Workstation 42: Installing MySQL from Oracle Yum Repository
 
 Fedora Workstation 42 includes Fedora-packaged versions of MySQL Community Server, but in order to install and use the Oracle-provided Yum repository, DNF needs to be configured to prevent conflicts with Fedora's packages.
