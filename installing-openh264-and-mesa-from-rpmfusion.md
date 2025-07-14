@@ -11,7 +11,7 @@ sudo dnf config-manager --set-enabled fedora-cisco-openh264
 sudo dnf install gstreamer1-plugin-openh264 mozilla-openh264
 ```
 
-### Fedora 41
+### Fedora 41+
 
 ```bash
 sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
