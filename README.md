@@ -169,6 +169,8 @@ nmcli connection modify ssid 802-11-wireless.powersave 0
 
 In many cases, the sound that comes out of the speakers sounds a bit muddy and does not have good sound staging. To improve things a bit, I use [EasyEffects](https://github.com/wwmm/easyeffects) and the "Laptop" preset provided by [JackHack96/EasyEffects-Presets](https://github.com/JackHack96/EasyEffects-Presets).
 
+There is another EasyEffects profile that was created by a Framework Laptop 16 user that you may prefer over the "Laptop" present: [ed-2100/fw-ee-profiles](https://github.com/ed-2100/fw-ee-profiles)
+
 ## VS Code: Inserting of indents when using KDE Task Switcher
 
 While this is not specific to the Framework Laptop 16 or even Fedora, but it is an annoyance when using KDE Task Switcher via `Alt` + `Tab`. A workaround is to set "Allow legacy X11 apps to read keystrokes typed in all apps" to "Never" instead of the default "As above, plus any key typed while the Control, Alt, or Meta keys are pressed".
