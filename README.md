@@ -177,6 +177,10 @@ While this is not specific to the Framework Laptop 16 or even Fedora, but it is 
 
 Keep in mind that this might break functionality of other legacy X11 applications outside of VS Code.
 
+## Framework Fan Control
+
+I am using the [fw-fanctrl](https://github.com/TamtamHero/fw-fanctrl) service to customize the fan curve for my laptop so that it's a nicer balance between fan noise and the temperature of the keyboard and wrist rest. I've included the customized [/etc/fw-fanctrl/config.json](etc/fw-fanctrl/config.json) file that I'm using. I've added a `quiet` strategy when I'm willing to have the laptop run a little warmer but stay quieter when working on audio. For other times, I use the customized `lazy` strategy.
+
 ## 'License'
 
 Files and documentation included in this repository is free and unemcumbered software released into the public domain. For more information, see the included UNLICENSE file.

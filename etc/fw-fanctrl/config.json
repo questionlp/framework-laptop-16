@@ -1,0 +1,100 @@
+{
+    "$schema": "./config.schema.json",
+    "defaultStrategy": "lazy",
+    "strategyOnDischarging" : "",
+    "strategies": {
+        "quiet": {
+            "fanSpeedUpdateFrequency": 5,
+            "movingAverageInterval": 40,
+            "speedCurve": [
+                { "temp": 0, "speed": 0 },
+                { "temp": 60, "speed": 10 },
+                { "temp": 70, "speed": 20 },
+                { "temp": 80, "speed": 30 },
+                { "temp": 85, "speed": 50 },
+	        { "temp": 95, "speed": 80 },
+                { "temp": 97, "speed": 90 }
+            ]
+        },
+        "laziest": {
+            "fanSpeedUpdateFrequency": 5,
+            "movingAverageInterval": 35,
+            "speedCurve": [
+                { "temp": 0, "speed": 0 },
+                { "temp": 50, "speed": 10 },
+                { "temp": 65, "speed": 20 },
+                { "temp": 75, "speed": 30 },
+                { "temp": 85, "speed": 50 },
+                { "temp": 95, "speed": 75 },
+                { "temp": 98, "speed": 100 }
+            ]
+	},
+        "lazy": {
+            "fanSpeedUpdateFrequency": 5,
+            "movingAverageInterval": 30,
+            "speedCurve": [
+                { "temp": 0, "speed": 5 },
+                { "temp": 50, "speed": 20 },
+                { "temp": 60, "speed": 30 },
+                { "temp": 70, "speed": 40 },
+                { "temp": 75, "speed": 70 },
+                { "temp": 85, "speed": 100 }
+            ]
+        },
+        "medium": {
+            "fanSpeedUpdateFrequency": 5,
+            "movingAverageInterval": 30,
+            "speedCurve": [
+                { "temp": 0, "speed": 15 },
+                { "temp": 40, "speed": 20 },
+                { "temp": 60, "speed": 35 },
+                { "temp": 70, "speed": 50 },
+                { "temp": 75, "speed": 70 },
+                { "temp": 85, "speed": 100 }
+            ]
+        },
+        "agile": {
+            "fanSpeedUpdateFrequency": 3,
+            "movingAverageInterval": 15,
+            "speedCurve": [
+                { "temp": 0, "speed": 15 },
+                { "temp": 40, "speed": 15 },
+                { "temp": 60, "speed": 30 },
+                { "temp": 70, "speed": 40 },
+                { "temp": 75, "speed": 80 },
+                { "temp": 85, "speed": 100 }
+            ]
+        },
+        "very-agile": {
+            "fanSpeedUpdateFrequency": 2,
+            "movingAverageInterval": 5,
+            "speedCurve": [
+                { "temp": 0, "speed": 15 },
+                { "temp": 40, "speed": 15 },
+                { "temp": 60, "speed": 30 },
+                { "temp": 70, "speed": 40 },
+                { "temp": 75, "speed": 80 },
+                { "temp": 85, "speed": 100 }
+            ]
+        },
+        "deaf": {
+            "fanSpeedUpdateFrequency": 2,
+            "movingAverageInterval": 5,
+            "speedCurve": [
+                { "temp": 0, "speed": 20 },
+                { "temp": 40, "speed": 30 },
+                { "temp": 50, "speed": 50 },
+                { "temp": 60, "speed": 100 }
+            ]
+        },
+        "aeolus": {
+            "fanSpeedUpdateFrequency": 2,
+            "movingAverageInterval": 5,
+            "speedCurve": [
+                { "temp": 0, "speed": 20 },
+                { "temp": 40, "speed": 50 },
+                { "temp": 65, "speed": 100 }
+            ]
+        }
+    }
+}
