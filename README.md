@@ -2,7 +2,7 @@
 
 This repository contains files that fix issues or modify behavior of the Framework Laptop 16 when using Linux.
 
-**Note:** The primary version of this repository now resides on Codeberg as [framework-laptop-16](https://codeberg.org/qlp/framework-laptop-16). The GitHub repository is now a mirror of the Codeberg repository.
+**Note:** The authoritative version of this repository now resides on Codeberg as [framework-laptop-16](https://codeberg.org/qlp/framework-laptop-16) and mirrors changes to GitHub. Going forward, issues and pull requests should be created on Codeberg rather than GitHub.
 
 ## Fedora: Package Installation
 
